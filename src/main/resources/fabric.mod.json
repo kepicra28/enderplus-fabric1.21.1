@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "enderplus",
+	"version": "${version}",
+	"name": "enderplus",
+	"description": "EnderPlus is finally back after a long time. The journey will accelerate again.",
+	"authors": [
+		"kepicra!"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/user/kepicra_28",
+		"sources": "https://modrinth.com/user/kepicra_28"
+	},
+	"license": "CC BY-NC-SA",
+	"icon": "assets/enderplus/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"kepicra.enderplus.Enderplus"
+		],
+		"fabric-datagen": [
+			"kepicra.enderplus.EnderplusDataGenerator"
+		],
+		"client":  [
+			"kepicra.enderplus.enderplusClient"
+		]
+	},
+	"mixins": [
+		"enderplus.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
